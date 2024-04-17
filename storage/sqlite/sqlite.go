@@ -22,6 +22,12 @@ func (s *SQLiteDriver) Open(uri string) (storage.OpenFGADatastore, error) {
 
 type SQLite struct{}
 
+// New constructs and returns an implementation of a
+// SQLite OpenFGADatastore.
+func New() *SQLite {
+	return &SQLite{}
+}
+
 // Close implements storage.OpenFGADatastore.
 func (s *SQLite) Close() {
 }
