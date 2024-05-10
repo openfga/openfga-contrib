@@ -6,9 +6,10 @@ import (
 
 	"google.golang.org/grpc"
 
+	"github.com/openfga/openfga/pkg/plugin"
+
 	"github.com/openfga/openfga-contrib/middleware/authorizer"
 	"github.com/openfga/openfga-contrib/middleware/ratelimiter"
-	"github.com/openfga/openfga/pkg/plugin"
 )
 
 type mockAuthorizer struct{}
