@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/openfga/openfga-contrib/storage/sqlite"
 	"github.com/openfga/openfga/pkg/plugin"
+
+	"github.com/openfga/openfga-contrib/storage/sqlite"
 )
 
 func InitPlugin(pm *plugin.PluginManager) error {
