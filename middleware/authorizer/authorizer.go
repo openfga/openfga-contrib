@@ -10,7 +10,6 @@ import (
 
 func UnaryServerInterceptor(authorizer Authorizer) grpc.UnaryServerInterceptor {
 	return func(ctx context.Context, req any, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (resp any, err error) {
-
 		storeIDGetter, ok := req.(FGAStoreIDGetter)
 		if !ok {
 			// no storeID
